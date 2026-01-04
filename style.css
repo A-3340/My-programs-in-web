@@ -46,7 +46,8 @@ body {
 #y input[type="text"]{
     position: fixed;
     left: 25%;
-    height: 30px;
+    height: 35px;
+    width: 100% ;    
     bottom: 50%;
     border-radius: 20px;
     border-top:10px;
@@ -100,9 +101,10 @@ body {
 }
 
 #o input[type="text"]{
-    position: absolute;
+    position: fixed;
     left:25%;
-    height: 30px;
+    height: 35px;
+    width: 100% ;    
     bottom: 57%;
     border-radius: 20px;
     border-top:10px;
@@ -208,8 +210,8 @@ body {
 
 #t{
     position: absolute;
-    left: 60%;
-    bottom: 50.5%;
+    right: 15px ;
+    top: 180px ;
     border-radius: 60px;
     background-color: rgba(0, 0, 0, 0.04);
     border: 2px solid;
