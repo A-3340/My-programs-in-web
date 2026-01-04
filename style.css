@@ -7,7 +7,9 @@ body {
 }
 
 .container {
+  position: relative;
   width: 320px;
+  min-height: 550px;
   padding: 25px;
   display: flex;
   flex-direction: column;
@@ -21,7 +23,7 @@ body {
 #p button{
     position: absolute;
     left: 50%;
-    bottom: 80%;
+    top: -40px;
     height: 80px;
     width: 80px;
     background-image: url(moon.jpg);
@@ -31,6 +33,7 @@ body {
     border-bottom: 10px;
     border-top: 10px;
     background-size: contain;
+    transform: translateX(-50%) ;
     animation: m 3s infinite ease-in-out;
 }
 
