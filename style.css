@@ -1,0 +1,238 @@
+body {
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(kk.gif);
+    animation: fadein 1s ease-in-out;
+}
+
+#p button{
+    position: absolute;
+    left: 50%;
+    bottom: 80%;
+    height: 80px;
+    width: 80px;
+    background-image: url(moon.jpg);
+    border-radius: 60px;
+    border-left: 10px;
+    border-right: 10px;
+    border-bottom: 10px;
+    border-top: 10px;
+    background-size: contain;
+    animation: m 3s infinite ease-in-out;
+}
+
+@keyframes m{
+    0%{transform: scale(1);box-shadow: 0 0 80px white;}
+    50%{transform: scale(0.9); box-shadow: 0 0 60px white;}
+    100%{transform: scale(1); box-shadow: 0 0 80px white;}
+}
+
+#y input[type="text"]{
+    position: fixed;
+    left: 25%;
+    height: 30px;
+    bottom: 50%;
+    border-radius: 20px;
+    border-top:10px;
+    border-right: 10px;
+    border-bottom: 10px;
+    border-left: 10px;
+    background-color: rgba(0, 0, 0, 0.04);
+    box-shadow: 0 0 8px skyblue;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+}
+
+#y input[type="text"]:active{
+    transform: translateY(3px);
+}
+
+#e button{
+    position: absolute;
+    left:31%;
+    height: 40px;
+    width: 130px;
+    bottom: 40%;
+    border-radius: 20px;
+    border-top: 10px;
+    border-right: 10px;
+    border-bottom: 10px;
+    border-left: 10px;
+    background-color: white;
+    box-shadow: 0 0 30px skyblue;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(tyh.jpg);
+    color: lightblue;
+    font-size: 20px;
+    transition: 0.2s ease-in-out ;
+}
+
+#e button:active{
+    transform: translateY(3px);
+    box-shadow: 0 0 8px white;
+}
+
+#e button:hover{
+    background-image: url(ll.gif);
+    text-shadow: 0 0 12px white;
+    color: white;
+}
+
+#o input[type="text"]{
+    position: absolute;
+    left:25%;
+    height: 30px;
+    bottom: 57%;
+    border-radius: 20px;
+    border-top:10px;
+    border-right: 10px;
+    border-bottom: 10px;
+    border-left: 10px;
+    box-shadow: 0 0 8px skyblue;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.04);
+    
+}
+
+#o input[type="text"]:active{
+    transform: translateY(3px);
+}
+
+#h{
+    color: white;
+    position: absolute;
+    left: 22%;
+    bottom: 63%;
+    user-select: none;
+    text-shadow: 0 0 8px white;
+}
+
+#b button{
+    position: absolute;
+    left: 78%;
+    height: 50px;
+    width: 50px;
+    bottom: 66%;
+    box-shadow: 0 0 8px white;
+    border-radius: 60px;
+    border: 2px solid white;
+    border-left: 10px;
+    border-top: 10px;
+    border-right: 10px;
+    border-bottom: 10px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(g.png);
+    transition: 0.3s ease-in-out ;
+}
+
+#b button:active{
+    transform: translateY(3px);
+    box-shadow: 0 0 8px yellow;
+    user-select: none;
+}
+
+#b button:hover{
+    background-image: url(uu.gif);
+}
+.b5 button{
+    color: black;
+    position: absolute;
+    left: 42%;
+    height: 50px;
+    width: 50px;
+    bottom: 20%;
+    box-shadow: 0 0 8px white;
+    border-radius: 60px;
+    border: 2px solid white;
+    border-left: 10px;
+    border-top: 10px;
+    border-right: 10px;
+    border-bottom: 10px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(notebook.jpg);
+    transition: 0.2s ease-in-out ;
+}
+
+.b5 button:active{
+    transform: translateY(3px);
+    box-shadow: 0 0 8px wheat;
+    user-select: none;
+}
+
+#mm img{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.04);
+    left: 23.5%;
+    bottom: 37%;
+    height: 210px;
+    width: 200px;
+    z-index: -1;
+    border-radius: 20px;
+    box-shadow: 0 0 10px white;
+    backdrop-filter: blur(2px);
+}
+
+@keyframes fadein {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+#t{
+    position: absolute;
+    left: 60%;
+    bottom: 50.5%;
+    border-radius: 60px;
+    background-color: rgba(0, 0, 0, 0.04);
+    border: 2px solid;
+    border-color: rgba(0, 0, 0, 0.04);
+    transition: 0.1s ease-in-out;
+    user-select: none;
+}
+
+#t:active{
+    transform: translateY(1px);
+}
+
+#nt2{
+    display: none;
+    position: relative;
+    left: 7%;
+    bottom: 1%;
+    height: 520px;
+    width: 350px;
+    z-index: 1;
+}
+
+#ah{
+    display: none;
+    position: relative;
+    left: 30%;
+    bottom: 55%;
+    color: black;
+    text-shadow: 0 0 8px skyblue;
+    z-index: 2;
+}
+
+#ah2{
+    display: none;
+   position: relative;
+    left: 30%;
+    bottom: 55%;
+    color: black;
+    text-shadow: 0 0 8px skyblue;
+    z-index: 2; 
+}
