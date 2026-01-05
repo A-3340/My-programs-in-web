@@ -1,29 +1,15 @@
 body {
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container {
-  position: relative;
-  width: 320px;
-  min-height: 550px;
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  background: rgba(255,255,255,0.3);
-  border-radius: 25px;
-  box-shadow: 0 0 20px rgba(255,255,255,0.8);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(kk.gif);
+    animation: fadein 1s ease-in-out;
 }
 
 #p button{
     position: absolute;
     left: 50%;
-    top: -40px;
+    bottom: 80%;
     height: 80px;
     width: 80px;
     background-image: url(moon.jpg);
@@ -33,7 +19,6 @@ body {
     border-bottom: 10px;
     border-top: 10px;
     background-size: contain;
-    transform: translateX(-50%) ;
     animation: m 3s infinite ease-in-out;
 }
 
@@ -46,8 +31,7 @@ body {
 #y input[type="text"]{
     position: fixed;
     left: 25%;
-    height: 35px;
-    width: 100% ;    
+    height: 30px;
     bottom: 50%;
     border-radius: 20px;
     border-top:10px;
@@ -101,10 +85,9 @@ body {
 }
 
 #o input[type="text"]{
-    position: fixed;
+    position: absolute;
     left:25%;
-    height: 35px;
-    width: 100% ;    
+    height: 30px;
     bottom: 57%;
     border-radius: 20px;
     border-top:10px;
@@ -210,8 +193,8 @@ body {
 
 #t{
     position: absolute;
-    right: 15px ;
-    top: 180px ;
+    left: 60%;
+    bottom: 50.5%;
     border-radius: 60px;
     background-color: rgba(0, 0, 0, 0.04);
     border: 2px solid;
@@ -232,6 +215,7 @@ body {
     height: 520px;
     width: 350px;
     z-index: 1;
+    user-select: none;
 }
 
 #ah{
@@ -239,7 +223,7 @@ body {
     position: relative;
     left: 30%;
     bottom: 55%;
-    color: black;
+    color: red;
     text-shadow: 0 0 8px skyblue;
     z-index: 2;
 }
@@ -249,7 +233,33 @@ body {
    position: relative;
     left: 30%;
     bottom: 55%;
-    color: black;
+    color: red;
     text-shadow: 0 0 8px skyblue;
     z-index: 2; 
+}
+
+#slid{
+    display: none;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 200px;
+  height: 20px;
+  color: rgba(0, 0, 0, 0.04);
+  background-color: white;
+  border-radius: 10px;
+  outline: none;
+  border: 3px solid;
+  border-left-color: steelblue;
+  border-right-color: steelblue;
+  border-top-color: steelblue;
+  border-bottom-color: steelblue;
+  box-shadow: 0 0 8px white;
+}
+
+#name{
+    position: absolute;
+    left: 74%;
+    bottom: 5%;
+    color: white;
+    text-shadow: 0 0 8px white;
 }
