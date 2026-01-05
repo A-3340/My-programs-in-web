@@ -1,6 +1,6 @@
 let b = document.getElementById('t')
 let username = document.getElementById('tr')
-let a = document.getElementById('a')
+let A7 = document.getElementById('A')
 let pass = document.getElementById('u')
 let d = document.getElementById('d')
 let scr = document.getElementById('scr')
@@ -9,9 +9,12 @@ let nt = document.getElementById('nt')
 let nt2 = document.getElementById('nt2')
 let t1 = document.getElementById('ah')
 let t2 = document.getElementById('ah2')
+let slid = document.getElementById('slid')
+let mouse = document.getElementById("Ms")
 let g = false
 let lw = false
 let k = ""
+A7.volume = 1
 d.addEventListener('click', function(){
   A.play()
   A.currentTime = 0
@@ -40,9 +43,26 @@ scr.addEventListener('click', function(){
 });
 
 document.addEventListener('click', function () {
-  let A = document.getElementById('A')
-  A.play()
-}, {once:true})
+  A7.play()
+
+  setTimeout(() => {
+    const fadeOut = setInterval(() => {
+      if (A7.volume > 0.3) {
+        A7.volume -= 0.01
+        slid.value = A7.volume * 100
+        slid.style.display = "block"
+      } else{
+        
+        slid.value = A7.volume * 100
+        A7.volume = 0.3
+        slid.value = 30
+        slid.style.display = "none"
+        clearInterval(fadeOut)
+      }
+    }, 200)
+  }, 1000)
+
+}, { once: true })
 
 b.addEventListener('click', function () {
    
